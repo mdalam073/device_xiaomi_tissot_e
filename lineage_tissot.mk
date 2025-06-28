@@ -15,7 +15,18 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := Official
+# AxionOS-Specific FlagsAdd commentMore actions
+AXION_MAINTAINER := Alam
+AXION_PROCESSOR := Snapdragon_625
+
+# Define rear camera specs
+AXION_CAMERA_REAR_INFO := 12,12
+AXION_CAMERA_FRONT_INFO := 5
+
+# CPU
+AXION_CPU_SMALL_CORES := Octa-core 2.0 GHz Cortex-A53
+AXION_GPU_CORES := Adreno 506
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_PICO_GAPPS := true
 
