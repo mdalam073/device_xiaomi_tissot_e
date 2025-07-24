@@ -12,16 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := Official
+# Infinity X
+INFINITY_MAINTAINER := Alam
+EVO_BUILD_TYPE := UnOfficial
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_PICO_GAPPS := true
+WITH_GAPPS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := infinity_tissot
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
