@@ -13,17 +13,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common Infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
-# Infinity X
-INFINITY_MAINTAINER := Alam
-EVO_BUILD_TYPE := UnOfficial
+# Maintainer
+ALPHA_BUILD_TYPE := UNOfficial
+ALPHA_MAINTAINER := Alam
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := infinity_tissot
+PRODUCT_NAME := alpha_tissot
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
